@@ -5,6 +5,7 @@
 
 /* html */
 body{
+    position: relative;
     display: grid;
     grid-template-areas:
         "cabeca cabeca"
@@ -79,8 +80,54 @@ footer{
 
 /* media */
 
+/* card */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    justify-content: center;
+    margin: 15px;
+    border: rgb(46, 46, 46) 4px solid;
+}
+
+.inf_produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(226, 226, 226);
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    margin: 15px;
+    border: rgb(46, 46, 46) 4px solid;
+
+}
+
+.texto_produto{
+    padding: 20px;
+    overflow-wrap: break-word;
+}
+
+.imagem_produto{
+    width: 500px;
+}
+
+/* card */
 .mae{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+.centro{
+    text-align: center;
+}
+
+.esquerda{
+    text-align: left;
+}
+.direita{
+    text-align: right;
 }
