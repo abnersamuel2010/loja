@@ -59,6 +59,7 @@ footer{
     .logo{
         height: 200px;
     }
+
 }
 @media only screen and (max-width: 450px){
     body{
@@ -105,6 +106,28 @@ footer{
     margin: 15px;
     border: rgb(46, 46, 46) 4px solid;
 
+}
+
+.adicionar_carrinho{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none; 
+    color: inherit;
+    margin: 15px;
+    
+}
+
+.add_carrinho{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.texto_botao{
+    width: 20px;
+    height: 50px;
+    color: black;
 }
 
 .texto_produto{
