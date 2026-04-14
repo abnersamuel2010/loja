@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* html */
+.imagem_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.imagem_usuario{
+    height: 23%;
+    width: 23%;
+}
+body{
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca"
+        "braco corpo"
+        "pe pe";
+        grid-template-rows: 300px auto 400px;
+        grid-template-columns: 300px auto;
+    
+}
+
+header{
+    background-color: black;
+    grid-area: cabeca;
+    color: white;
+}
+
+aside{
+    background-color: rgb(66, 66, 66);
+    grid-area: braco;
+    color: black;
+}
+
+main{
+    background-color: red;
+    grid-area: corpo;
+    color: black;
+}
+
+footer{
+    background-color: black;
+    grid-area: pe;
+    color: white;
+}
+
+.logo{
+    height: 250px;
+}
+/* html */
+
+/* media */
+@media only screen and (max-width: 850px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "braco"
+        "corpo"
+        "pe";
+        grid-template-rows: 200px  100px auto 200px;
+        grid-template-columns: auto;
+    }
+    .logo{
+        height: 200px;
+    }
+
+}
+@media only screen and (max-width: 450px){
+    body{
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "pe";
+        grid-template-rows: 200px auto 200px;
+        grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+    .logo{
+        height: 200px;
+    }
+}
+/* media */
+
+/* posicoes */
+.centro{
+    text-align: center;
+}
+
+.esquerda{
+    text-align: left;
+}
+.direita{
+    text-align: right;
+}
+/* posicoes */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    width: 200px;
+    height: 450px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 15px;
+    border: rgb(46, 46, 46) 4px solid;
+}

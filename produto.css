@@ -4,6 +4,16 @@
 }
 
 /* html */
+.imagem_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.imagem_usuario{
+    height: 23%;
+    width: 23%;
+}
 body{
     position: relative;
     display: grid;
@@ -12,7 +22,7 @@ body{
         "braco corpo"
         "pe pe";
         grid-template-rows: 300px auto 400px;
-        grid-template-columns: 350px auto;
+        grid-template-columns: 300px auto;
 }
 
 header{
@@ -40,7 +50,7 @@ footer{
 }
 
 .logo{
-    height: 300px;
+    height: 250px;
 }
 /* html */
 
@@ -102,11 +112,14 @@ footer{
     background-color: rgb(226, 226, 226);
     width: 350px;
     height: auto;
+    font-size: 170%;
     text-align: center;
     margin: 15px;
     border: rgb(46, 46, 46) 4px solid;
 
 }
+
+
 
 .preco_produto{
     padding: 50px;
