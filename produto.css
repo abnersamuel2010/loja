@@ -101,20 +101,15 @@ footer{
     justify-content: space-between;
     background-color: rgb(226, 226, 226);
     width: 350px;
-    height: 500px;
+    height: auto;
     text-align: center;
     margin: 15px;
     border: rgb(46, 46, 46) 4px solid;
 
 }
 
-.adicionar_carrinho{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none; 
-    color: inherit;
-    margin: 15px;
+.preco_produto{
+    padding: 50px;
     
 }
 
