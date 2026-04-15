@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html */
+.imagem_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.imagem_usuario {
+    height: 23%;
+    width: 23%;
+}
+
+body {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca"
+        "braco corpo"
+        "pe pe";
+    grid-template-rows: 300px auto 400px;
+    grid-template-columns: 300px auto;
+
+}
+
+header {
+    background-color: black;
+    grid-area: cabeca;
+    color: white;
+}
+
+aside {
+    background-color: rgb(66, 66, 66);
+    grid-area: braco;
+    color: black;
+}
+
+main {
+    background-color: red;
+    grid-area: corpo;
+    color: black;
+}
+.logo {
+    height: 250px;
+}
+footer {
+    background-color: black;
+    grid-area: pe;
+    color: white;
+    padding: 20px;
+}
+
+.mae {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.redes_socias {
+    min-width: 150px;
+}
+
+.dados{
+    margin-bottom: 10px;
+}
+
+.sla {
+    margin-top: 20px;
+    text-align: center;
+}
+/* html */
+
+/* media */
+@media only screen and (max-width: 850px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "cabeca"
+            "braco"
+            "corpo"
+            "pe";
+        grid-template-rows: 200px 100px auto 200px;
+        grid-template-columns: auto;
+    }
+
+    .logo {
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "cabeca"
+            "corpo"
+            "pe";
+        grid-template-rows: 200px auto 200px;
+        grid-template-columns: auto;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .logo {
+        height: 200px;
+    }
+}
+
+/* media */
+
+/* posicoes */
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.esquerda {
+    text-align: left;
+}
+
+.direita {
+    text-align: right;
+}
+
+/* posicoes */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(226, 226, 226);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: rgb(46, 46, 46) 4px solid;
+}
+.imagem_produto{
+    height: 70px;
+    width: 100px;
+}
+.carrinho {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(60, 6, 6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 600px;
+    text-align: center;
+    color: black;
+}
+.mae{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.remover{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;/* pra fazer mudar o cursor pra selecionavel*/
+}
+.total{
+    color: white;
+}
+.mais {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.selecionar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menos {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.info {
+    flex: 1;
+    margin-left: 10px;
+}
+.quant {
+    font-size: 18px;
+    min-width: 20px;
+    text-align: center;
+}
+.titulo{
+    color: white;
+}

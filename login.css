@@ -1,114 +1,146 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* html */
-.imagem_header{
+.imagem_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
-.imagem_usuario{
+
+.imagem_usuario {
     height: 23%;
     width: 23%;
 }
-body{
+
+body {
     position: relative;
     display: grid;
     grid-template-areas:
         "cabeca cabeca"
         "braco corpo"
         "pe pe";
-        grid-template-rows: 300px auto 400px;
-        grid-template-columns: 300px auto;
-    
+    grid-template-rows: 300px auto 400px;
+    grid-template-columns: 300px auto;
+
 }
 
-header{
+header {
     background-color: black;
     grid-area: cabeca;
     color: white;
 }
 
-aside{
+aside {
     background-color: rgb(66, 66, 66);
     grid-area: braco;
     color: black;
 }
 
-main{
+main {
     background-color: red;
     grid-area: corpo;
     color: black;
 }
-
-footer{
+.logo {
+    height: 250px;
+}
+footer {
     background-color: black;
     grid-area: pe;
     color: white;
+    padding: 20px;
 }
 
-.logo{
-    height: 250px;
+.mae {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.redes_socias {
+    min-width: 150px;
+}
+
+.dados{
+    margin-bottom: 10px;
+}
+
+.sla {
+    margin-top: 20px;
+    text-align: center;
 }
 /* html */
 
 /* media */
-@media only screen and (max-width: 850px){
-    body{
-    display: grid;
-    grid-template-areas:
-        "cabeca"
-        "braco"
-        "corpo"
-        "pe";
-        grid-template-rows: 200px  100px auto 200px;
+@media only screen and (max-width: 850px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "cabeca"
+            "braco"
+            "corpo"
+            "pe";
+        grid-template-rows: 200px 100px auto 200px;
         grid-template-columns: auto;
     }
-    .logo{
+
+    .logo {
         height: 200px;
     }
 
 }
-@media only screen and (max-width: 450px){
-    body{
-    display: grid;
-    grid-template-areas:
-        "cabeca"
-        "corpo"
-        "pe";
+
+@media only screen and (max-width: 450px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "cabeca"
+            "corpo"
+            "pe";
         grid-template-rows: 200px auto 200px;
         grid-template-columns: auto;
     }
-    aside{
+
+    aside {
         display: none;
     }
-    .logo{
+
+    .logo {
         height: 200px;
     }
 }
+
 /* media */
 
 /* posicoes */
-.centro{
-    text-align: center;
+.centro {
+    display: flex;
+    justify-content: center;
 }
 
-.esquerda{
+.esquerda {
     text-align: left;
 }
-.direita{
+
+.direita {
     text-align: right;
 }
+
 /* posicoes */
 
-.card{
+.itens{
+    font-size: 20px;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px;
+    padding: 70px;
     align-items: center;
     background-color: rgb(226, 226, 226);
     width: 200px;

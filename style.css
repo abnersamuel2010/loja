@@ -1,100 +1,147 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* html */
-.imagem_header{
+.imagem_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
-body{
+
+.imagem_usuario {
+    height: 23%;
+    width: 23%;
+}
+
+body {
+    position: relative;
     display: grid;
     grid-template-areas:
         "cabeca cabeca"
         "braco corpo"
         "pe pe";
-        grid-template-rows: 300px auto 400px;
-        grid-template-columns: 300px auto;
+    grid-template-rows: 300px auto 400px;
+    grid-template-columns: 300px auto;
+
 }
 
-header{
+header {
     background-color: black;
     grid-area: cabeca;
     color: white;
 }
 
-aside{
+aside {
     background-color: rgb(66, 66, 66);
     grid-area: braco;
     color: black;
 }
 
-main{
+main {
     background-color: red;
     grid-area: corpo;
     color: black;
 }
-
-footer{
+.logo {
+    height: 250px;
+}
+footer {
     background-color: black;
     grid-area: pe;
     color: white;
+    padding: 20px;
 }
 
-.logo{
-    height: 250px;
+.mae {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.redes_socias {
+    min-width: 150px;
+}
+
+.dados{
+    margin-bottom: 10px;
+}
+
+.sla {
+    margin-top: 20px;
+    text-align: center;
 }
 /* html */
 
 /* media */
-@media only screen and (max-width: 850px){
-    body{
-    display: grid;
-    grid-template-areas:
-        "cabeca"
-        "braco"
-        "corpo"
-        "pe";
-        grid-template-rows: 200px  100px auto 200px;
+@media only screen and (max-width: 850px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "cabeca"
+            "braco"
+            "corpo"
+            "pe";
+        grid-template-rows: 200px 100px auto 200px;
         grid-template-columns: auto;
     }
-    .logo{
+
+    .logo {
         height: 200px;
     }
+
 }
-@media only screen and (max-width: 450px){
-    body{
-    display: grid;
-    grid-template-areas:
-        "cabeca"
-        "corpo"
-        "pe";
+
+@media only screen and (max-width: 450px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "cabeca"
+            "corpo"
+            "pe";
         grid-template-rows: 200px auto 200px;
         grid-template-columns: auto;
     }
-    aside{
+
+    aside {
         display: none;
     }
-    .logo{
+
+    .logo {
         height: 200px;
     }
 }
 
 /* media */
 
+/* posicoes */
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.esquerda {
+    text-align: left;
+}
+
+.direita {
+    text-align: right;
+}
+
+/* posicoes */
+
 /* card */
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px;
     align-items: center;
     background-color: rgb(226, 226, 226);
-    width: 200px;
-    height: 450px;
+    width: 150px;
+    height: 400px;
     border-radius: 50px;
     text-align: center;
     margin: 15px;
@@ -102,46 +149,47 @@ footer{
 }
 
 
-.imagem_produto{
+.imagem_produto {
     width: 250px;
 }
 
-.d_produto{
+.d_produto {
     color: rgb(22, 22, 22);
     font-size: xx-large;
 
 }
 
-.p_produto{
+.p_produto {
     color: rgb(22, 22, 22);
     font-size: 40px;
 }
 
-.botao_card{
+.botao_card {
     font-size: 30px;
     background-color: black;
-    width: 90%;
-    height: 45px;
+    width: 110%;
+    height: 55px;
     text-decoration: none;
     border-radius: 20px;
 }
 
-.letra_botao{
+.letra_botao {
     display: block;
     text-align: center;
     text-decoration: none;
     color: aliceblue;
 }
-.imagem_usuario{
+
+.imagem_usuario {
     height: 23%;
     width: 23%;
 }
+
 /* card */
 
 
-.mae{
+.mae {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
