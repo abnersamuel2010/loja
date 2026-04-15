@@ -23,9 +23,9 @@ body {
         "cabeca cabeca"
         "braco corpo"
         "pe pe";
-    grid-template-rows: 300px auto 400px;
+    grid-template-rows: 300px auto 4000px;
     grid-template-columns: 300px auto;
-
+    margin: 0;
 }
 
 header {
@@ -55,11 +55,7 @@ footer {
     padding: 20px;
 }
 
-.mae {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+
 
 .redes_socias {
     min-width: 150px;
@@ -84,7 +80,7 @@ footer {
             "braco"
             "corpo"
             "pe";
-        grid-template-rows: 200px 100px auto 200px;
+        grid-template-rows: 200px 100px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -101,7 +97,7 @@ footer {
             "cabeca"
             "corpo"
             "pe";
-        grid-template-rows: 200px auto 200px;
+        grid-template-rows: 200px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -140,7 +136,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 70px;
+    padding: 80px;
     align-items: center;
     background-color: rgb(226, 226, 226);
     width: 200px;
@@ -149,4 +145,17 @@ footer {
     text-align: center;
     margin: 15px;
     border: rgb(46, 46, 46) 4px solid;
+}
+.cadastrar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 1    5px;
+    cursor: pointer;
+}
+.mae {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }

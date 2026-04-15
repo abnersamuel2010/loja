@@ -23,7 +23,7 @@ body {
         "cabeca cabeca"
         "braco corpo"
         "pe pe";
-    grid-template-rows: 300px auto 400px;
+    grid-template-rows: 300px auto 4000px;
     grid-template-columns: 300px auto;
 
 }
@@ -53,6 +53,7 @@ footer {
     grid-area: pe;
     color: white;
     padding: 20px;
+
 }
 
 .mae {
@@ -84,7 +85,7 @@ footer {
             "braco"
             "corpo"
             "pe";
-        grid-template-rows: 200px 100px auto 200px;
+        grid-template-rows: 200px 100px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -101,7 +102,7 @@ footer {
             "cabeca"
             "corpo"
             "pe";
-        grid-template-rows: 200px auto 200px;
+        grid-template-rows: 200px auto 2000px;
         grid-template-columns: auto;
     }
 

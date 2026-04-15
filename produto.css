@@ -23,7 +23,7 @@ body {
         "cabeca cabeca"
         "braco corpo"
         "pe pe";
-    grid-template-rows: 300px auto 400px;
+    grid-template-rows: 300px auto 4000px;
     grid-template-columns: 300px auto;
 
 }
@@ -84,7 +84,7 @@ footer {
             "braco"
             "corpo"
             "pe";
-        grid-template-rows: 200px 100px auto 200px;
+        grid-template-rows: 200px 100px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -101,7 +101,7 @@ footer {
             "cabeca"
             "corpo"
             "pe";
-        grid-template-rows: 200px auto 200px;
+        grid-template-rows: 200px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -142,7 +142,7 @@ footer {
     height: 250px;
     text-align: center;
     justify-content: center;
-    margin: 15px;
+    margin: 10px;
     border: rgb(46, 46, 46) 4px solid;
 }
 
@@ -155,7 +155,7 @@ footer {
     height: auto;
     font-size: 150%;
     text-align: center;
-    margin: 15px;
+    margin: 10px;
     border: rgb(46, 46, 46) 4px solid;
 
 }
@@ -164,7 +164,7 @@ footer {
 
 .preco_produto {
     font-size: 25px;
-    padding: 30px;
+    padding: 20px;
 
 }
 

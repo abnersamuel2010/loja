@@ -23,7 +23,7 @@ body {
         "cabeca cabeca"
         "braco corpo"
         "pe pe";
-    grid-template-rows: 300px auto 400px;
+    grid-template-rows: 300px auto 4000px;
     grid-template-columns: 300px auto;
 
 }
@@ -84,7 +84,7 @@ footer {
             "braco"
             "corpo"
             "pe";
-        grid-template-rows: 200px 100px auto 200px;
+        grid-template-rows: 200px 100px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -101,7 +101,7 @@ footer {
             "cabeca"
             "corpo"
             "pe";
-        grid-template-rows: 200px auto 200px;
+        grid-template-rows: 200px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -149,11 +149,13 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
     background-color: rgb(60, 6, 6);
-    padding: 30px;
+    padding:  10px 30px;
     border-radius: 15px;
     width: 600px;
     text-align: center;
     color: black;
+    width: 100%;
+    max-width: 600px; 
 }
 .mae{
     display: flex;
@@ -166,7 +168,15 @@ footer {
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
-    cursor: pointer;/* pra fazer mudar o cursor pra selecionavel*/
+    cursor: pointer;
+}
+.finalizar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .total{
     color: white;

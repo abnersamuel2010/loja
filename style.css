@@ -21,9 +21,10 @@ body {
     display: grid;
     grid-template-areas:
         "cabeca cabeca"
-        "braco corpo"
+        "braco braco"
+        "corpo corpo"
         "pe pe";
-    grid-template-rows: 300px auto 400px;
+    grid-template-rows: 300px  50px auto 4000px;
     grid-template-columns: 300px auto;
 
 }
@@ -55,12 +56,6 @@ footer {
     padding: 20px;
 }
 
-.mae {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 .redes_socias {
     min-width: 150px;
 }
@@ -84,7 +79,7 @@ footer {
             "braco"
             "corpo"
             "pe";
-        grid-template-rows: 200px 100px auto 200px;
+        grid-template-rows: 200px 100px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -101,7 +96,7 @@ footer {
             "cabeca"
             "corpo"
             "pe";
-        grid-template-rows: 200px auto 200px;
+        grid-template-rows: 200px auto 2000px;
         grid-template-columns: auto;
     }
 
@@ -176,7 +171,8 @@ footer {
 .letra_botao {
     display: block;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none;    align-items: center;
+
     color: aliceblue;
 }
 
@@ -192,4 +188,21 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.menu_lateral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.botao_menu {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
