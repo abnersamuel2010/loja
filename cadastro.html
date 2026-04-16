@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Kero - Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Restaurante Kero - Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
     <link id="icon" rel="icon" href="img/kero_icon.png">
 </head>
 
@@ -29,51 +29,47 @@
     </aside>
     <main>
         <div class="centro">
-            <br>
-            <div class="card">
-                <h1>Cadastro</h1><br>
-                <div class="itens">
-                    <div class="nome">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="email">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="cpf">
-                        <label for="cep">CPF:</label>
-                        <input type="number" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required>
-                    </div>
-                    <div class="telefone">
-                        <label for="telefone">Telefone de Contato:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="00 00000-0000" required>
-                    </div>
-                    <div class="cep">
-                        <label for="cep">CEP:</label>
-                        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" required>
-                    </div>
-                    <div class="cidade">
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" name="cidade" required>
-                    </div>
-                    <div class="endereco">
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" name="endereco" required>
-                    </div>
-                    <div class="numero">
-                        <label for="numero">Número</label>
-                        <input type="number" id="numero" name="numero" maxlength="5" required>
-                    </div>
-                    <div class="senha">
-                        <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha" required>
-                    </div>
-                    <div class="confirmarSenha"></div>
-                    <br>
-                    <button type="submit" class="cadastrar">Cadastrar</button>
+            <form class="bloco">
+                <h1>Cadastrar</h1>
+                
+                <div class="input_box">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
                 </div>
-            </div>
+                <div class="input_box">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+                </div>
+                <div class="input_box">
+                    <label for="cep">CPF:</label>
+                    <input type="number" id="cpf" name="cpf" maxlength="14" placeholder="123.456.789-00" required>
+                </div>
+                <div class="input_box">
+                    <label for="telefone">Telefone de Contato:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="12 12345-6789" required>
+                </div>
+                <div class="input_box">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" placeholder="12345-678" required>
+                </div>
+                <div class="input_box">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+                </div>
+                <div class="input_box">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Av, Rua, ..." required>
+                </div>
+                <div class="input_box">
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" name="numero" maxlength="5" placeholder="1234" required>
+                </div>
+                <div class="input_box">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="cadastrar">Cadastrar</button>
+            </form>
         </div>
     </main>
     <footer>
