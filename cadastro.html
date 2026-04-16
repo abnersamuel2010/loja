@@ -31,18 +31,46 @@
         <div class="centro">
             <br>
             <div class="card">
-                <h1>Login</h1><br>
+                <h1>Cadastro</h1><br>
                 <div class="itens">
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
                     <div class="email">
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" class="input" required>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="cpf">
+                        <label for="cep">CPF:</label>
+                        <input type="number" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required>
+                    </div>
+                    <div class="telefone">
+                        <label for="telefone">Telefone de Contato:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="00 00000-0000" required>
+                    </div>
+                    <div class="cep">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" required>
+                    </div>
+                    <div class="cidade">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+                    <div class="endereco">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+                    <div class="numero">
+                        <label for="numero">Número</label>
+                        <input type="number" id="numero" name="numero" maxlength="5" required>
                     </div>
                     <div class="senha">
                         <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha" class="input" required>
+                        <input type="password" id="senha" name="senha" required>
                     </div>
-                </div>
-                <div class="bloco_cadastrar">
+                    <div class="confirmarSenha"></div>
+                    <br>
                     <button type="submit" class="cadastrar">Cadastrar</button>
                 </div>
             </div>
