@@ -182,3 +182,6 @@ footer {
     flex: 1;
     min-width: 250px;
 }
+.titulo{
+    padding: 15px;
+}
