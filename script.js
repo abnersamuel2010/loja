@@ -1,17 +1,14 @@
-function busca_alunos(){
+function pagina() {
     fetch('dados.json')
         .then(response => response.json())
-        .then(ddd => {
-        tablet = document.getElementById('lugar');
-        ddd.forEach(pessoainha => {
-            let linha = document.createElement('tr');
-            linha.innerHTML =
-                "<td>" + pessoainha.produto + "</td>" +
-                "<td>" + pessoainha.preco + "</td>" +
-                "<td>" + pessoainha.imagem + "</td>"+
-                "<td>" + pessoainha.descricao + "</td>";
-            tablet.appendChild(linha);
-        });
-
-})
+        .then(dadinho => {
+            document.getElementById('destino').innerHTML =
+                `<div class="card">
+                <img src="img/`+ dadinho.imagem + `" class="imagem_produto" alt="">
+                <h3>`+ dadinho.nome + `</h3>
+                <p class="d_produto">`+ dadinho.descricao + `</p>
+                <p class="p_produto">R$ `+ dadinho.preco + `</p>
+                <p class="botao_card"><a class="letra_botao" href="`+ dadinho.endereco + `">Saiba Mais</a></p>
+            </div>`;
+        })
 }
