@@ -1,24 +1,37 @@
-function pagina() {
-    fetch('dados.json')
-        .then(response => response.json())
-        .then(ddd => {
-             tablet = document.getElementById('destino');
+ async function pagina() {
+    const destino = document.getElementById('destino');
+    try{
+        const response = await fetch('dados.json'); 
+        
+        if (!response.ok) throw new Error('Falha ao carregar dados');
 
-             ddd.forEach(dadinho => {
-                let linha = document.createElement('li');
+        const paginas = await response.json();
 
-                linha.innerHTML =
-                `<div class="card">
-                    <img src="img/`+ dadinho.imagem + `" class="imagem_produto" alt="">
-                    <h3>`+ dadinho.nome + `</h3>
-                    <p class="d_produto">`+ dadinho.descricao + `</p>
-                    <p class="p_produto">R$ `+ dadinho.preco + `</p>
-                    <p class="botao_card">
-                        <a class="letra_botao" href="`+ dadinho.endereco + `">Saiba Mais</a>
-                    </p>
-                </div>`;
-            tablet.appendChild(linha);
-            });
-                
-        })
-}
+        destino.innerHTML='';
+
+        paginas.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            card.innerHTML = `
+                <img src="img/${item.imagem}" alt="Foto de ${item.nome}" alt="">
+                <h3></h3>
+                <p id="p_produto"></p>
+                <p id="d_produto"></p>
+                <a href="${item.endereco}">
+                    <button type="button">Saiba mais</button>
+                </a>
+            `;
+
+            card.querySelector('h3').textContent = item.nome;
+            card.querySelector("d_produto").textContent = item.preco;
+            card.querySelector("d_produto").textContent = item.descricao;
+
+
+            destino.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Erro na requisição:', error);
+        destino.innerHTML = '<p>Desculpe, não foi possivel carregar as informações no momento.</p>';
+    }
+ }

@@ -184,21 +184,17 @@ footer {
 
 .botao_card {
     font-size: 30px;
+    padding: 10px 0px;
     background-color: black;
     width: 100%;
     height: auto;
     text-decoration: none;
     border-radius: 15px;
-}
-
-.letra_botao {
-    display: block;
     text-align: center;
-    text-decoration: none;
     align-items: center;
     color: aliceblue;
-    padding: 10px 0px;
 }
+
 /* card */
 
 
