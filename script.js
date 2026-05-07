@@ -14,18 +14,16 @@
             card.className = 'card';
 
             card.innerHTML = `
-                <img src="img/${item.imagem}" alt="Foto de ${item.nome}" alt="">
-                <h3></h3>
-                <p id="p_produto"></p>
-                <p id="d_produto"></p>
-                <a href="${item.endereco}">
-                    <button type="button">Saiba mais</button>
-                </a>
+                    <div class="bloco_imagem">
+                        <img src="img/${item.imagem}" alt="Foto de ${item.nome}" class="imagem_produto">
+                    </div>
+                    <h2></h2>
+                    <p class="p_produto"></p>
+                    <a class="botao_card" href="${item.endereco}">Saiba mais</a>
             `;
 
-            card.querySelector('h3').textContent = item.nome;
-            card.querySelector("d_produto").textContent = item.preco;
-            card.querySelector("d_produto").textContent = item.descricao;
+            card.querySelector('h2').textContent = item.nome;
+            card.querySelector('p').textContent = item.preco;
 
 
             destino.appendChild(card);

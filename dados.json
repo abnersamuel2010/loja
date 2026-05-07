@@ -1,7 +1,7 @@
 
 [
     {
-    "imagem":"imagem_produto.png",
+    "imagem":"macarronada.png",
     "nome":"Macarronada",
     "preco":"00,00",
     "descricao":"descrição",
@@ -9,7 +9,7 @@
     },
 
     {
-    "imagem":"imagem_produto.png",
+    "imagem":"carne.png",
     "nome":"Carne",
     "preco":"00,00",
     "descricao":"descrição",

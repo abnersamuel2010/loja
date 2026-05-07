@@ -168,7 +168,7 @@ footer {
 
 
 .imagem_produto {
-    width: 250px;
+    max-width: 230px;
 }
 
 .d_produto {
@@ -196,5 +196,13 @@ footer {
 }
 
 /* card */
-
-
+#destino {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.bloco_imagem{
+    padding: 5px 1px;
+}
